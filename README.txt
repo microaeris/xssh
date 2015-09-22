@@ -38,9 +38,6 @@ AUTHOR
 
     Alice Wang, Feb 5, 2015
 
-    For more things at the intersection of CS and cute: 
-    https://github.com/Ahris/
-
 INSTALL
 
     Use your favorite C compiler! I personally used gcc:
