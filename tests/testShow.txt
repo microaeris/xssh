@@ -1,0 +1,24 @@
+show show the basic program variables
+show $$
+show $$: $$
+show $!: $!
+show $?: $?
+
+show setting a, b, and c
+set a 1
+set b 2
+set c 3
+
+show a $a ,  b $b , c $c
+show pesona music is so good
+show this is a comment # do you see it?
+show #omg
+
+show setting a to be b's value (2)
+set a $b
+show should be 2: $a
+
+show the file vars
+show first var: $1
+show second var: $2
+

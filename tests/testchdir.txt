@@ -1,0 +1,10 @@
+pwd
+chdir ..
+pwd
+ls
+cd lab0
+chdir lab0
+
+show do you see comment?##comment
+show test exit
+exit 1

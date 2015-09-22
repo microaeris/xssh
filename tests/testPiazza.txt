@@ -1,0 +1,74 @@
+# Test input vars (obviously run this script with 2 input vars)
+show This is input var number 1: $1
+show This is input var number 2: $2 - What a lovely word.
+
+# test set/show/unset
+set x 2
+show expecting_2:
+show $x
+unset x
+show var_unset
+show expecting_empty:
+show $x
+
+# test comments
+show comments_ok # show comments_failed
+show yup, comments definetly ok#haha just kidding you totally failed.
+
+# test export
+export x 1
+show expecting_1:
+show $x
+
+# test exit
+#show expecting_3:
+#bash -c 'exit 3'
+#show $?
+
+# test pid
+ps -C xssh
+show expecting_pid:
+show $$
+
+# test dir
+show expecting directory sandwich:
+pwd
+chdir ..
+pwd
+chdir lab1
+pwd
+
+
+# Test Blanks
+		
+         
+
+ 
+
+	  	 	  	
+
+
+# Test Output redirection
+ls -l > output.txt
+show expecting ls -l:
+cat output.txt
+
+# Test Input Redirection
+show expecting a linecount of ls -l:
+wc -l < output.txt
+
+# Test Input to Output
+show expecting the linecount again:
+wc -l < output.txt > output2.txt
+cat output2.txt
+
+# Test Wait/Background
+show Your shell should now pause 10 seconds, perhaps take this moment to look at your other outputs to tests
+sleep 10 &
+wait $!
+show Ten seconds better have passed, hello again :)
+
+#Test Ctrl-C
+show PRESS CTRL-C NOW...
+sleep 100
+show GOOD YOU PASSED :)

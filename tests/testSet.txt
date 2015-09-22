@@ -1,0 +1,12 @@
+set a a
+set b b
+set c c
+set d d
+set e e
+set f f
+set g g
+set h h
+set i i
+unset a
+unset b
+unset c
