@@ -18,19 +18,19 @@
 #define MAX_LINE_SIZE 256
 
 
-int foregroundPID = -1;    	 // PID of foreground child process
+int foregroundPID = -1;     // PID of foreground child process
 int displayCommand = 0;     // Command line arg set on start of xssh
-int numLocalVars = 8;      	 // Total local variables the current array can hold
-int localVarIndex = 0;    	  	 // Count of the local varables, used to index array
+int numLocalVars = 8;       // Total local variables the current array can hold
+int localVarIndex = 0;      // Count of the local varables, used to index array
 
 
 // Array of local variables
 struct variableHashStruct **localVars;
 
 
-char *argBuffer[MAX_ARGS + 1];  // Array of command that was read in, split by word
-char *line = NULL;             		 // Command string read in
-int argCount = 1;              			 // Number of args found in command
+char *argBuffer[MAX_ARGS + 1];      // Array of command that was read in, split by word
+char *line = NULL;                  // Command string read in
+int argCount = 1;              	    // Number of args found in command
 
 
 
